@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/forms.css">
+
+<style>
+
+body{
+background:#f5f7fb;
+font-family:Arial,sans-serif;
+}
+
+.container{
+max-width:500px;
+margin:auto;
+padding:20px;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.profile-card{
+
+background:#fff;
+
+padding:20px;
+
+border-radius:20px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.photo{
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+.photo img{
+
+width:120px;
+
+height:120px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:4px solid #1565C0;
+
+background:#eee;
+
+}
+
+.photo input{
+
+margin-top:12px;
+
+}
+
+input{
+
+width:100%;
+
+padding:14px;
+
+margin-top:12px;
+
+border:none;
+
+border-radius:12px;
+
+background:#f2f2f2;
+
+font-size:16px;
+
+box-sizing:border-box;
+
+}
+
+button{
+
+width:100%;
+
+padding:15px;
+
+margin-top:18px;
+
+border:none;
+
+border-radius:12px;
+
+background:#1565C0;
+
+color:white;
+
+font-size:16px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#0D47A1;
+
+}
+
+.creator{
+
+margin-top:30px;
+
+padding:20px;
+
+background:#fff;
+
+border-radius:15px;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+line-height:1.8;
+
+}
+
+.creator h3{
+
+margin:0;
+
+color:#1565C0;
+
+}
+
+.creator p{
+
+margin:5px 0;
+
+font-size:15px;
+
+}
+
+.version{
+
+color:#666;
+
+}
+
+.developer{
+
+font-size:18px;
+
+font-weight:bold;
+
+color:#0D47A1;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h2>Owner Profile</h2>
+
+<button onclick="history.back()">
+
+Back
+
+</button>
+
+</div>
+
+<div class="profile-card">
+
+<div class="photo">
+
+<img
+id="profilePreview"
+src="images/user.png">
+
+<br>
+
+<input
+type="file"
+id="profilePhoto"
+accept="image/*">
+
+</div>
+
+<input
+type="text"
+id="ownerName"
+placeholder="Owner Name">
+
+<input
+type="text"
+id="ownerPhone"
+placeholder="Phone Number">
+
+<input
+type="text"
+id="shopName"
+placeholder="Shop Name">
+
+<input
+type="text"
+id="ownerAddress"
+placeholder="Shop Address">
+
+<input
+type="password"
+id="newPassword"
+placeholder="Change Password">
+
+<button
+id="saveProfile">
+
+💾 Save Settings
+
+</button>
+
+<button id="deleteProfile" style="background:#d32f2f;">
+🗑 Delete Profile
+</button>
+
+</div>
+
+<div class="creator">
+
+<h3>Loan Manager Pro</h3>
+
+<p class="version">
+
+Version 2.0
+
+</p>
+
+<hr>
+
+<p>
+
+Developed & Designed By
+
+</p>
+
+<p class="developer">
+
+Abdul Nur Asib
+
+</p>
+
+</div>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>

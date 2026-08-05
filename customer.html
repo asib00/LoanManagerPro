@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Customer Details</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/forms.css">
+
+<style>
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.photo-box{
+text-align:center;
+margin-bottom:20px;
+}
+
+.photo-box img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #1565C0;
+background:#eee;
+}
+
+.card{
+background:#fff;
+padding:18px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+margin-bottom:15px;
+}
+
+.card p{
+margin:10px 0;
+font-size:16px;
+}
+
+.card strong{
+color:#1565C0;
+}
+
+.action-btn{
+width:100%;
+padding:14px;
+margin-top:10px;
+font-size:16px;
+}
+
+.payment-box{
+margin-top:20px;
+}
+
+.payment-box input{
+margin-bottom:10px;
+}
+
+.id-photo{
+
+margin-top:15px;
+text-align:center;
+
+}
+
+.id-photo img{
+
+width:100%;
+max-height:220px;
+object-fit:contain;
+border-radius:10px;
+border:1px solid #ddd;
+
+}
+
+.balance{
+
+font-size:22px;
+font-weight:bold;
+color:#0D47A1;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h2>Customer Details</h2>
+
+<button onclick="history.back()">
+
+Back
+
+</button>
+
+</div>
+
+<div class="photo-box">
+
+<img
+id="customerPhoto"
+src="images/user.png">
+
+</div>
+
+<div class="card">
+
+<p><strong>Name:</strong>
+<span id="customerName"></span></p>
+
+<p><strong>Phone:</strong>
+<span id="customerPhone"></span></p>
+
+<p><strong>Address:</strong>
+<span id="customerAddress"></span></p>
+
+<p><strong>ID Type:</strong>
+<span id="customerIdType"></span></p>
+
+<div class="id-photo">
+
+<img
+id="customerIdPhoto"
+src="">
+
+</div>
+
+<hr>
+
+<p><strong>Loan:</strong>
+
+₹<span id="loanAmount"></span>
+
+</p>
+
+<p><strong>Interest:</strong>
+
+<span id="interestRate"></span> %
+
+</p>
+
+<p><strong>Payment Type:</strong>
+
+<span id="paymentType"></span>
+
+</p>
+
+<p><strong>Duration:</strong>
+
+<span id="loanDuration"></span>
+
+</p>
+
+<p><strong>Total Paid:</strong>
+
+₹<span id="totalPaid"></span>
+
+</p>
+
+<p>
+
+<strong>Outstanding:</strong>
+
+<span
+id="balance"
+class="balance">
+
+₹0
+
+</span>
+
+</p>
+
+</div>
+
+<div class="payment-box">
+
+<input
+type="number"
+id="paymentAmount"
+placeholder="Enter Payment Amount">
+
+<button
+class="action-btn"
+id="addPayment">
+
+Add Payment
+
+</button>
+
+</div>
+
+<button
+class="action-btn"
+id="historyBtn">
+
+Payment History
+
+</button>
+
+<button
+class="action-btn"
+id="blacklistBtn">
+
+Blacklist Customer
+
+</button>
+
+<button
+class="action-btn"
+id="editBtn">
+
+Edit Customer
+
+</button>
+
+<button
+class="action-btn"
+id="deleteBtn">
+
+Delete Customer
+
+</button>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/interest.js"></script>
+<script src="js/payment.js"></script>
+<script src="js/customer-details.js"></script>
+
+</body>
+
+</html>

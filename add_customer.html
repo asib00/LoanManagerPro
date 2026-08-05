@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Customer</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/forms.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="page-header">
+
+<button onclick="history.back()">
+← Back
+</button>
+
+<h2>Add Customer</h2>
+
+</div>
+
+<!-- Profile Photo -->
+
+<div class="photo-section">
+
+<img
+id="previewPhoto"
+src="images/user.png"
+alt="Customer Photo">
+
+<input
+type="file"
+id="photo"
+accept="image/*"
+hidden>
+
+<button
+type="button"
+onclick="document.getElementById('photo').click()">
+
+Choose Customer Photo
+
+</button>
+
+</div>
+
+<!-- Basic Details -->
+
+<input
+type="text"
+id="name"
+placeholder="Customer Name">
+
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number">
+
+<textarea
+id="address"
+placeholder="Full Address"></textarea>
+
+<!-- ID Proof -->
+
+<select id="idType">
+
+<option value="">Select ID Proof</option>
+
+<option value="Aadhaar">
+Aadhaar Card
+</option>
+
+<option value="PAN">
+PAN Card
+</option>
+
+<option value="Driving Licence">
+Driving Licence
+</option>
+
+<option value="Voter ID">
+Voter ID
+</option>
+
+</select>
+
+<input
+type="file"
+id="idPhoto"
+accept="image/*">
+
+<!-- Loan -->
+
+<input
+type="number"
+id="loan"
+placeholder="Loan Amount">
+
+<input
+type="number"
+id="interest"
+placeholder="Interest %">
+
+<input
+type="date"
+id="loanDate">
+
+<select id="paymentType">
+
+<option value="Daily">
+Daily
+</option>
+
+<option value="Weekly">
+Weekly
+</option>
+
+<option value="Monthly">
+Monthly
+</option>
+
+</select>
+
+<input
+type="number"
+id="duration"
+placeholder="Duration">
+
+<select id="durationType">
+
+<option value="Days">
+Days
+</option>
+
+<option value="Months">
+Months
+</option>
+
+<option value="Years">
+Years
+</option>
+
+</select>
+
+<!-- Notes -->
+
+<textarea
+id="notes"
+placeholder="Notes (Optional)"></textarea>
+
+<button id="saveBtn">
+
+Save Customer
+
+</button>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/customer.js"></script>
+
+</body>
+
+</html>

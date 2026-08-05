@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payment History</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/forms.css">
+
+<style>
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.history-card{
+
+background:#fff;
+
+padding:15px;
+
+border-radius:15px;
+
+margin-bottom:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.history-card h3{
+
+margin:0;
+color:#1565C0;
+
+}
+
+.history-card p{
+
+margin:6px 0;
+
+}
+
+.empty{
+
+text-align:center;
+
+padding:40px;
+
+color:#777;
+
+font-size:18px;
+
+}
+
+.total{
+
+background:#1565C0;
+
+color:#fff;
+
+padding:15px;
+
+border-radius:15px;
+
+margin-bottom:20px;
+
+text-align:center;
+
+font-size:20px;
+
+font-weight:bold;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h2>Payment History</h2>
+
+<button onclick="history.back()">
+
+Back
+
+</button>
+
+</div>
+
+<div
+id="totalPayment"
+class="total">
+
+₹0
+
+</div>
+
+<div
+id="historyList">
+
+</div>
+
+</div>
+
+<script src="js/db.js"></script>
+
+<script src="js/payment-history.js"></script>
+
+</body>
+
+</html>

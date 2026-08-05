@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blacklist Customers</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/forms.css">
+
+<style>
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.search-box{
+margin-bottom:20px;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+border:none;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
+font-size:16px;
+}
+
+.customer-card{
+background:#fff;
+padding:15px;
+border-radius:15px;
+margin-bottom:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.left{
+display:flex;
+align-items:center;
+}
+
+.left img{
+width:60px;
+height:60px;
+border-radius:50%;
+object-fit:cover;
+margin-right:15px;
+}
+
+.buttons button{
+margin-top:5px;
+width:100%;
+}
+
+.empty{
+text-align:center;
+padding:50px;
+color:#777;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h2>Blacklisted Customers</h2>
+
+<button onclick="history.back()">
+
+Back
+
+</button>
+
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Customer">
+
+</div>
+
+<div id="blacklistContainer">
+
+</div>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/blacklist.js"></script>
+
+</body>
+
+</html>

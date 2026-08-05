@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Edit Customer</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/forms.css">
+
+<style>
+
+body{
+background:#f5f7fb;
+font-family:Arial,sans-serif;
+}
+
+.container{
+max-width:550px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#fff;
+padding:20px;
+border-radius:18px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.photo{
+text-align:center;
+margin-bottom:20px;
+}
+
+.photo img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #1565C0;
+background:#eee;
+}
+
+.photo input{
+margin-top:10px;
+}
+
+input,
+select{
+width:100%;
+padding:14px;
+margin-top:12px;
+border:none;
+border-radius:12px;
+background:#f2f2f2;
+font-size:16px;
+box-sizing:border-box;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:18px;
+border:none;
+border-radius:12px;
+background:#1565C0;
+color:#fff;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#0D47A1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Edit Customer</h2>
+
+<div class="photo">
+
+<img id="preview" src="images/user.png">
+
+<br>
+
+<input
+type="file"
+id="photo"
+accept="image/*">
+
+</div>
+
+<input
+type="text"
+id="name"
+placeholder="Customer Name">
+
+<input
+type="text"
+id="phone"
+placeholder="Phone Number">
+
+<input
+type="text"
+id="address"
+placeholder="Address">
+
+<input
+type="number"
+id="loan"
+placeholder="Loan Amount">
+
+<input
+type="number"
+id="interest"
+placeholder="Interest %">
+
+<select id="paymentType">
+
+<option>Daily</option>
+
+<option>Weekly</option>
+
+<option>Monthly</option>
+
+</select>
+
+<input
+type="number"
+id="duration"
+placeholder="Duration">
+
+<select id="durationType">
+
+<option>Days</option>
+
+<option>Weeks</option>
+
+<option>Months</option>
+
+</select>
+
+<button id="updateBtn">
+
+💾 Update Customer
+
+</button>
+
+</div>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/edit-customer.js"></script>
+
+</body>
+
+</html>

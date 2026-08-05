@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Backup Database</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+background:#f5f7fb;
+}
+
+.container{
+max-width:500px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+text-align:center;
+margin-top:50px;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:15px;
+border:none;
+border-radius:12px;
+background:#1565C0;
+color:#fff;
+font-size:17px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0D47A1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Database Backup</h2>
+
+<p>
+
+Download a complete backup of your Loan Manager data.
+
+</p>
+
+<button id="backupBtn">
+
+📦 Create Backup
+
+</button>
+
+<button onclick="history.back()">
+
+⬅ Back
+
+</button>
+
+</div>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/backup.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Loan Manager Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+
+        <div class="profile" id="profileBtn">
+            <img id="profileImage" src="images/user.png" alt="Profile">
+        </div>
+
+        <div class="header-text">
+
+            <h2>Loan Manager</h2>
+
+            <p id="welcomeText">
+                Welcome
+            </p>
+
+        </div>
+
+        <div class="menu-btn" id="menuBtn">
+            ⋮
+        </div>
+
+    </div>
+
+    <!-- Popup Menu -->
+
+    <div class="menu-popup" id="menuPopup">
+
+        <div class="menu-item" id="paymentHistoryBtn">
+
+            💰 Payment History
+
+        </div>
+
+        <div class="menu-item" id="blacklistBtn">
+
+            🚫 Blacklist
+
+        </div>
+
+        <div class="menu-item" id="backupBtn">
+
+            💾 Backup
+
+        </div>
+
+        <div class="menu-item" id="restoreBtn">
+
+            📂 Restore
+
+        </div>
+
+        <div class="menu-item" id="logoutBtn">
+
+            🚪 Logout
+
+        </div>
+
+    </div>
+
+    <!-- Balance Card -->
+
+    <div class="balance-card">
+
+        <p>Total Outstanding</p>
+
+        <h1 id="totalBalance">
+
+            ₹0
+
+        </h1>
+
+    </div>
+
+    <!-- Search -->
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Customer">
+
+    </div>
+
+    <!-- Customer List -->
+
+    <div id="customerList">
+
+    </div>
+
+</div>
+
+<!-- Floating Button -->
+
+<button class="fab" id="addCustomerBtn">
+
++
+
+</button>
+
+<script src="js/db.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
