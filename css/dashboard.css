@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.container{
+    max-width:450px;
+    margin:auto;
+    padding:15px;
+}
+
+/* Header */
+
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.profile{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    overflow:hidden;
+    background:#ddd;
+    cursor:pointer;
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.header-text{
+    flex:1;
+    margin-left:15px;
+}
+
+.header-text h2{
+    color:#1565C0;
+    font-size:22px;
+}
+
+.header-text p{
+    color:#666;
+    font-size:14px;
+}
+
+.menu-btn{
+    font-size:28px;
+    cursor:pointer;
+    user-select:none;
+}
+
+/* Popup Menu */
+
+.menu-popup{
+    display:none;
+    position:absolute;
+    right:15px;
+    top:70px;
+    width:210px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    overflow:hidden;
+    z-index:999;
+}
+
+.menu-item{
+    padding:15px;
+    cursor:pointer;
+    border-bottom:1px solid #eee;
+    font-size:16px;
+}
+
+.menu-item:last-child{
+    border-bottom:none;
+}
+
+.menu-item:hover{
+    background:#f1f1f1;
+}
+
+/* Balance Card */
+
+.balance-card{
+    background:linear-gradient(135deg,#1565C0,#42A5F5);
+    color:#fff;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.balance-card p{
+    font-size:15px;
+    opacity:.9;
+}
+
+.balance-card h1{
+    margin-top:10px;
+    font-size:34px;
+}
+
+/* Search */
+
+.search-box{
+    margin-bottom:20px;
+}
+
+.search-box input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#fff;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    font-size:16px;
+    outline:none;
+}
+
+/* Customer Card */
+
+.customer-card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#fff;
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+    cursor:pointer;
+}
+
+.customer-left{
+    display:flex;
+    align-items:center;
+}
+
+.customer-photo{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    overflow:hidden;
+    background:#ddd;
+}
+
+.customer-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.customer-info{
+    margin-left:15px;
+}
+
+.customer-info h3{
+    font-size:18px;
+    color:#222;
+}
+
+.customer-info p{
+    font-size:14px;
+    color:#666;
+    margin-top:4px;
+}
+
+.customer-balance{
+    color:#1565C0;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Floating Button */
+
+.fab{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    border:none;
+    border-radius:50%;
+    background:#1565C0;
+    color:#fff;
+    font-size:34px;
+    cursor:pointer;
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+.fab:hover{
+    background:#0D47A1;
+}
